@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7409dc7d-775b-4a97-86a8-393ff58eae83" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/techreturners/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/techreturners/TicTacToe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/techreturners/TicTacToeTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2ip5UWZvYio7FlXu8hg5zOWqXcy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.TicTacToeTest.checkPositionPlayable.executor": "Run",
+    "JUnit.TicTacToeTest.savePlayer1Position.executor": "Run",
+    "JUnit.TicTacToeTest.shouldReturnPlayer1Input_WhenGetPlayer1PositionCalledWith00.executor": "Run",
+    "JUnit.TicTacToeTest.shouldReturnTrue_validatePositionInput.executor": "Run",
+    "JUnit.TicTacToeTest.shouldReturnTrue_validatePositionWithValidInput.executor": "Run",
+    "Maven.TicTacToe [clean,compile,test].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.techreturners" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TicTacToeTest.checkPositionPlayable">
+    <configuration name="TicTacToeTest.checkPositionPlayable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TicTacToe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techreturners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.techreturners" />
+      <option name="MAIN_CLASS_NAME" value="com.techreturners.TicTacToeTest" />
+      <option name="METHOD_NAME" value="checkPositionPlayable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicTacToeTest.savePlayer1Position" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TicTacToe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techreturners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.techreturners" />
+      <option name="MAIN_CLASS_NAME" value="com.techreturners.TicTacToeTest" />
+      <option name="METHOD_NAME" value="savePlayer1Position" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicTacToeTest.shouldReturnPlayer1Input_WhenGetPlayer1PositionCalledWith00" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TicTacToe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techreturners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.techreturners" />
+      <option name="MAIN_CLASS_NAME" value="com.techreturners.TicTacToeTest" />
+      <option name="METHOD_NAME" value="shouldReturnPlayer1Input_WhenGetPlayer1PositionCalledWith00" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicTacToeTest.shouldReturnTrue_validatePositionInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TicTacToe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techreturners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.techreturners" />
+      <option name="MAIN_CLASS_NAME" value="com.techreturners.TicTacToeTest" />
+      <option name="METHOD_NAME" value="shouldReturnTrue_validatePositionInput" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicTacToeTest.shouldReturnTrue_validatePositionInputWithValidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TicTacToe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techreturners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.techreturners" />
+      <option name="MAIN_CLASS_NAME" value="com.techreturners.TicTacToeTest" />
+      <option name="METHOD_NAME" value="shouldReturnTrue_validatePositionInputWithValidInput" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TicTacToeTest.checkPositionPlayable" />
+        <item itemvalue="JUnit.TicTacToeTest.shouldReturnTrue_validatePositionInput" />
+        <item itemvalue="JUnit.TicTacToeTest.savePlayer1Position" />
+        <item itemvalue="JUnit.TicTacToeTest.shouldReturnTrue_validatePositionInputWithValidInput" />
+        <item itemvalue="JUnit.TicTacToeTest.shouldReturnPlayer1Input_WhenGetPlayer1PositionCalledWith00" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7409dc7d-775b-4a97-86a8-393ff58eae83" name="Changes" comment="" />
+      <created>1720174696482</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720174696482</updated>
+    </task>
+    <servers />
+  </component>
+</project>
