@@ -20,28 +20,12 @@ class TicTacToeTest {
         ticTacToe = new TicTacToe(playerOne,playerTwo);
     }
 
-//    @Test
-//    void shouldReturnPlayer1Input_WhenGetPlayer1PositionCalledWith00(){
-//        int[] expectedOutput = new int[]{0,0};
-//
-//        assertEquals(expectedOutput[0], ticTacToe.getPlayer1Position(0,0)[0]);
-//        assertEquals(expectedOutput[1], ticTacToe.getPlayer1Position(0,0)[1]);
-//    }
-
-
     @Test
     void shouldReturnTrue_validatePositionInput() {
         assertTrue(ticTacToe.validatePositionInput(1,1));
         assertFalse(ticTacToe.validatePositionInput(1,3));
     }
 
-//    @Test
-//    void savePlayer1Position() {
-//        int[] playerPos = new int[]{1,1};
-//        ticTacToe.savePlayer1Position(playerPos);
-//        assertArrayEquals(playerPos,ticTacToe.getPlayer1Positions()[ticTacToe.getPlayer1Positions().length]);
-//    }
-//
     @Test
     void checkPositionPlayable() {
         List<Position> player1Positions = List.of(new Position(1,1),new Position(2,0),new Position(0,0));
@@ -53,6 +37,14 @@ class TicTacToeTest {
         //nonplayable position
         assertFalse(ticTacToe.checkPositionPlayable(1,1));
         assertFalse(ticTacToe.checkPositionPlayable(0,1));
-
     }
+    @Test
+    void savePlayer1Position() {
+        List<Position> player1Positions = new ArrayList<>(List.of(new Position(1,1),new Position(2,0),new Position(0,0)));
+        ticTacToe.getPlayerOne().setPlayerPositions(player1Positions);
+        Position savePos = new Position(2,2);
+        ticTacToe.savePlayer1Position(2,2);
+        assertTrue(ticTacToe.getPlayerOne().getPlayerPositions().contains(savePos));
+    }
+
 }
