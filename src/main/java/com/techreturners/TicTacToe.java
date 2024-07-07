@@ -46,7 +46,13 @@ public class TicTacToe {
     }
 
     public void savePlayer1Position(int rowNum, int colNum) {
-        playerOne.getPlayerPositions().add(new Position(rowNum,colNum));
+        playerOne.savePosition(new Position(rowNum,colNum));
     }
+
+    public void savePlayer2Position(int rowNum, int colNum) {
+        playerTwo.savePosition(new Position(rowNum,colNum));
+    }
+
+
 
 }

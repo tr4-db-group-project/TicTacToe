@@ -16,4 +16,9 @@ public class Player {
     public Player(List<Position> playerPositions) {
         this.playerPositions = playerPositions;
     }
+
+    public void savePosition(Position p) {
+        playerPositions.add(p);
+    }
+
 }
