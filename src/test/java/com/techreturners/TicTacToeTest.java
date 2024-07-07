@@ -55,6 +55,6 @@ class TicTacToeTest {
         ticTacToe.getPlayerOne().setPlayerPositions(player1Positions);
         ticTacToe.getPlayerTwo().setPlayerPositions(player2Positions);
         String text = ticTacToe.generateDisplayGrid();
-        assertEquals("X O   \n  X   \nX O   \n",text);
+        assertEquals("X O _ \n_ X _ \nX O _ \n",text);
     }
 }

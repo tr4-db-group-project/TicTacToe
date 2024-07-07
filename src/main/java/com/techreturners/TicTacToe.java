@@ -73,7 +73,7 @@ public class TicTacToe {
         for(int i=0;i<3;i++) {
             for (int j = 0; j < 3; j++) {
                 if (gridOutput[i][j] == '\u0000')
-                    output.append(" ");
+                    output.append("_");
                 else
                     output.append(gridOutput[i][j]);
                 output.append(" ");
