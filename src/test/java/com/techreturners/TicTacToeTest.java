@@ -8,6 +8,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
 class TicTacToeTest {
     private TicTacToe ticTacToe;
     private Player playerOne;
@@ -15,8 +16,8 @@ class TicTacToeTest {
 
     @BeforeEach
     void setUp(){
-        playerOne = new Player(new ArrayList<Position>());
-        playerTwo = new Player(new ArrayList<Position>());
+        playerOne = new Player(new ArrayList<>());
+        playerTwo = new Player(new ArrayList<>());
         ticTacToe = new TicTacToe(playerOne,playerTwo);
     }
 
@@ -47,4 +48,13 @@ class TicTacToeTest {
         assertTrue(ticTacToe.getPlayerOne().getPlayerPositions().contains(savePos));
     }
 
+    @Test
+    void generateDisplayGrid(){
+        List<Position> player1Positions = List.of(new Position(1,1),new Position(2,0),new Position(0,0));
+        List<Position>player2Positions = List.of(new Position(0,1),new Position(2,1));
+        ticTacToe.getPlayerOne().setPlayerPositions(player1Positions);
+        ticTacToe.getPlayerTwo().setPlayerPositions(player2Positions);
+        String text = ticTacToe.generateDisplayGrid();
+        assertEquals("X O   \n  X   \nX O   \n",text);
+    }
 }

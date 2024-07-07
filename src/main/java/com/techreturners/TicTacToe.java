@@ -1,5 +1,7 @@
 package com.techreturners;
 
+import java.util.ArrayList;
+
 public class TicTacToe {
 
     private Player playerOne;
@@ -8,6 +10,11 @@ public class TicTacToe {
     public TicTacToe(Player playerOne, Player playerTwo) {
         this.playerOne = playerOne;
         this.playerTwo = playerTwo;
+    }
+
+    public TicTacToe() {
+        playerOne = new Player(new ArrayList<>());
+        playerTwo = new Player(new ArrayList<>());
     }
 
     public Player getPlayerOne() {
@@ -53,6 +60,27 @@ public class TicTacToe {
         playerTwo.savePosition(new Position(rowNum,colNum));
     }
 
+    public String generateDisplayGrid() {
+        char[][] gridOutput = new char[3][3];
+        StringBuilder output = new StringBuilder();
+        for(Position pos :playerOne.getPlayerPositions()) {
+            gridOutput[pos.rowNum()][pos.colNum()]='X';
+        }
+        for(Position pos:playerTwo.getPlayerPositions()) {
+            gridOutput[pos.rowNum()][pos.colNum()]='O';
+        }
 
+        for(int i=0;i<3;i++) {
+            for (int j = 0; j < 3; j++) {
+                if (gridOutput[i][j] == '\u0000')
+                    output.append(" ");
+                else
+                    output.append(gridOutput[i][j]);
+                output.append(" ");
+            }
+            output.append("\n");
+        }
+        return output.toString();
+    }
 
 }
