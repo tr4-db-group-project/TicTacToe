@@ -1,6 +1,7 @@
 package com.techreturners;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class TicTacToe {
 
@@ -61,22 +62,22 @@ public class TicTacToe {
     }
 
     public String generateDisplayGrid() {
-        char[][] gridOutput = new char[3][3];
+        List<List<Character>> grid = new ArrayList<>(List.of(new ArrayList<>(List.of('_','_','_')),
+                                                            new ArrayList<>(List.of('_','_','_')),
+                                                            new ArrayList<>(List.of('_','_','_'))));
         StringBuilder output = new StringBuilder();
         for(Position pos :playerOne.getPlayerPositions()) {
-            gridOutput[pos.rowNum()][pos.colNum()]='X';
+            grid.get(pos.rowNum()).set(pos.colNum(),'X');
         }
         for(Position pos:playerTwo.getPlayerPositions()) {
-            gridOutput[pos.rowNum()][pos.colNum()]='O';
+            grid.get(pos.rowNum()).set(pos.colNum(),'O');
         }
 
         for(int i=0;i<3;i++) {
             for (int j = 0; j < 3; j++) {
-                if (gridOutput[i][j] == '\u0000')
-                    output.append("_");
-                else
-                    output.append(gridOutput[i][j]);
+                output.append(grid.get(i).get(j).toString());
                 output.append(" ");
+
             }
             output.append("\n");
         }

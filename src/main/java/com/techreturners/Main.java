@@ -8,8 +8,8 @@ public class Main {
         System.out.println("Hello world! Lets Play Tic Tac Toe");
         TicTacToe ticTacToe = new TicTacToe(new Player(new ArrayList<>()), new Player(new ArrayList<>()));
         boolean play = true;
+        System.out.println(ticTacToe.generateDisplayGrid());
         while (play) {
-            System.out.println(ticTacToe.generateDisplayGrid());
             while (play) {
                 System.out.println("Player1: enter row (0-2) and column(0-2)  for your move");
                 Scanner scanner = new Scanner(System.in);
@@ -21,6 +21,7 @@ public class Main {
                     if (ticTacToe.validatePositionInput(row, col)) {
                         if (ticTacToe.checkPositionPlayable(row, col)) {
                             ticTacToe.savePlayer1Position(row, col);
+                            System.out.println(ticTacToe.generateDisplayGrid());
                             play = !ticTacToe.getPlayerOne().checkWin();
                             if (!play)
                                 System.out.println("Player1 Wins this round");
@@ -46,6 +47,7 @@ public class Main {
                     if (ticTacToe.validatePositionInput(row, col)) {
                         if (ticTacToe.checkPositionPlayable(row, col)) {
                             ticTacToe.savePlayer2Position(row, col);
+                            System.out.println(ticTacToe.generateDisplayGrid());
                             play = !ticTacToe.getPlayerTwo().checkWin();
                             if (!play)
                                 System.out.println("Player2 Wins this round");
@@ -65,7 +67,6 @@ public class Main {
         }
 
 
-        System.out.println(ticTacToe.generateDisplayGrid());
 
     }
 }
